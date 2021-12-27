@@ -1,0 +1,240 @@
+
+html, body {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+:root {
+
+    /* Body */
+  --background-color:#edcecb;
+  --second-background:#ffffff;
+  
+  
+    /* Text */
+    --header-font:  Merriweather; 
+    --main-color:rgb(199, 197, 197);
+    --accent-color:#fff;
+    --accent-2:#ecb4b9;
+
+    /* header colors */
+
+    --head-color: #ecb4b9; 
+
+
+  /* Button */
+    --button-background1:#ecb4b9;
+    --button-hover: #a1a885;
+
+  /* Shadow */
+  --shadow: 0.2em 0.2em 0.4em rgb(80 57 61 / 35%);
+  --text-shadow: 0.03em 0.04em  0.02em rgb(80 57 61 / 35%);
+
+ 
+}
+
+/* Changes the colors of the selected area. */
+
+::selection {
+    color: #000;
+    background-color: #b7edca;
+  }
+  
+  /* width of the scrollbar (vertical & horizontal) */
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:  var(--accent-2);
+  
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 80, 153);
+  }
+  
+
+/**************/
+/* Basis */
+/**************/
+
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: 'arial', sans-serif;
+    overflow: hidden;
+
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-size: 3.5em;
+    margin-top: -0.10em;
+    letter-spacing: 2px;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-shadow: var(--text-shadow);
+  }
+
+  
+  /* States */
+  
+  :focus {
+    background-color: #edcecb;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-2);
+    padding: 10px;
+    outline: none;
+  }
+  
+  input:focus::-webkit-input-placeholder {
+    color: var(--accent-color);
+  }
+  
+  :disabled {
+    background-color: #7b7b7b;
+    color: var(--accent-color);
+    padding: 10px;
+    outline: none;
+  }
+  
+  :disabled:hover {
+    background-color: #a0a0a0;
+    color: var(--accent-color);
+    padding: 10px;
+    outline: none;
+  }
+  
+  
+  
+/**************/
+/* header */
+/**************/
+
+
+
+
+
+header {
+    background-image: url('../images/3.png');
+    background-repeat: no-repeat;
+    background-size: 102%;
+    background-position: center;
+    background-color: var(--second-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    
+}
+
+header h1 {
+    font-family: var(--header-font);
+    color: var(--head-color);
+}
+
+header p {
+    width: 70%;
+    text-align: center;
+    left: 0px;
+    margin: 0.05em;
+}
+
+header button {
+    padding: 0.5em;
+    margin: 3em;
+}
+
+button {
+    background-color: var(--button-background1);
+    color: var(--accent-color);
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    margin-bottom: 2em;
+    padding: 0.5em 1em 0.5em 1em;
+    border: 0.05em solid #edcecb;
+    border-radius: 0.5em;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #cbedd7, #d1cbed, #B3D2B2, #dfe9b4);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: border-box ;
+    -webkit-background-clip: border-box;
+    transition: .5s ease-in-out;
+  
+  }
+
+  
+  @media screen and (min-width: 700px) {
+
+header {
+    background-image: url('../images/4.png');
+    background-repeat: no-repeat;
+    background-size: 102%;
+    background-color: var(--second-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height: 50%;
+    margin: auto;
+    height: 100vh;
+    overflow: hidden;
+}
+
+  }
+
+
+/**************/
+/* KEYFRAMES */
+/**************/
+
+
+/* Rainbow keyframes */
+
+
+@keyframes rainbow { 
+    0%{background-position: left}
+    50%{background-position: right}
+    100%{background-position: left}
+  }
+  
+  /* bounce keyframes */
+  
+  @keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  

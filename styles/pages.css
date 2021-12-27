@@ -1,0 +1,473 @@
+html, body {
+  height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  
+  /* CSS Document */
+  *, *::after, *::before {
+    box-sizing:border-box;  
+  }
+  
+  
+  .resize-animation-stopper * {
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  
+  
+  /**************/
+  /* Kleur variabelen */
+  /**************/
+  
+  :root {
+  
+    /* Body */
+  --background-color:#edcecb;
+  --second-background:#ffffff;
+  
+  
+    /* Text */
+    --header-font:  shalimar; 
+    --header-1: lobster;
+    --header-2: lobster;
+    --header-3: lobster;
+    --font-body: Poppins;
+    --quote-font: yuji syuku;
+  
+    --main-color:rgb(199, 197, 197);
+    --accent-color:#fff;
+    --accent-2:#ecb4b9;
+    --accent-color-3: #a1a885;
+  
+    /* Links */
+      --link-color: #ecb4b9;
+      --nav-link: #000;
+      --nav-hover: #a1a885;
+      --nav-active: #ecb4b9;
+    
+  
+    /* header colors */
+    --head-color: #ecb4b9; 
+    --head-color2: #fff;
+  
+  /* Button */
+    --button-background1:#ecb4b9;
+    --button-hover: #a1a885;
+  
+  /* Shadow */
+  --shadow: 0.2em 0.2em 0.4em rgb(80 57 61 / 35%);
+  --text-shadow: 0.03em 0.04em  0.02em rgb(80 57 61 / 35%);
+  
+  /* overlay */
+  --overlay: #a1a885;
+  
+  }
+  
+  
+  /* Changes the colors of the selected area. */
+  
+  ::selection {
+    color: #000;
+    background-color: #b7edca;
+  }
+  
+  /* width of the scrollbar (vertical & horizontal) */
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:  var(--accent-2);
+  
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b7edca;
+  }
+  
+  /* States */
+  
+  :focus {
+    color: var(--accent-2);
+    border: 2px solid var(--accent-2);
+    padding: 10px;
+    outline: none;
+  }
+  
+  input:focus::-webkit-input-placeholder {
+    color: var(--accent-color);
+  }
+  
+  :disabled {
+    background-color: #7b7b7b;
+    color: var(--accent-2);
+    padding: 10px;
+    outline: none;
+  }
+  
+  :disabled:hover {
+    background-color: #a0a0a0;
+    color: var(--accent-2);
+    padding: 10px;
+    outline: none;
+  }
+  
+  
+  
+  
+  /**************/
+  /* Basis */
+  /**************/
+  
+  
+  body {
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.25em;
+    
+  }
+  
+  button {
+    background-color: var(--button-background1);
+    color: var(--accent-color);
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    margin-bottom: 2em;
+    padding: 0.5em 1em 0.5em 1em;
+    border: 0.05em solid #edcecb;
+    border-radius: 0.5em;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #cbedd7, #d1cbed, #B3D2B2, #dfe9b4);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: border-box ;
+    -webkit-background-clip: border-box;
+    transition: .5s ease-in-out;
+  
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-family: var(--header-1);
+    font-size: 45px;
+    
+  }
+  
+  h2 {
+    font-family: var(--header-2);
+    font-size: 25px;
+    
+    padding: 1em;
+  }
+  
+  h3 {
+    font-family: var(--header-3);
+    font-size: 20px;
+  }
+  
+  h1, h2 {
+    margin-top: -0.10em;
+    letter-spacing: 2px;
+    line-height: 1em;
+    letter-spacing: 2px;
+  }
+  
+  h3 {
+    letter-spacing: 2px;
+    line-height: 1em;
+    letter-spacing: 2px;
+  }
+  
+  ul, li, a {
+    color: #000;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  p {
+    margin-bottom: 1em;
+  }
+  
+  /**************/
+  /* NAV
+  /**************/
+  
+  
+  /* For desktop */
+  
+  @media screen and (min-width: 600px) {
+  
+    nav {
+      background: white;
+      position: sticky;
+      top: 0;
+      height: 50px;
+      text-align: right;
+      color: var(--nav-link);
+      border-bottom: 2px solid var(--head-color);
+      z-index: 9999;
+    }
+  
+    nav .logo img {    
+      float: left;
+      width:15%;
+    }
+  
+    nav ul {
+      margin-right: 100px;
+    }
+  
+    nav button {
+      display: none;
+    }
+  
+    nav a.active {
+      color: var(--nav-active);  
+    }
+  
+    nav a:hover {
+      color: var(--nav-hover);  
+      transition: 0.3s ease-in;
+    }
+  
+   button ul {
+      transition: none;
+      transition-delay: none;
+      transform: none;
+    }
+  
+    button ul.terug {
+      transition: none;
+      transition-delay: none;
+      transform: none;
+     }
+    
+    ul {
+      background-color:#fff;
+      overflow: auto;
+    }
+    
+    li {
+      display: inline-block;
+      padding: 1em;
+      list-style-type: none;
+    } 
+  }
+  
+
+
+  
+  /* For mobile */
+  
+  @media only screen and (max-width: 700px) {
+  
+  
+    nav  {
+      background-color: white;
+      position: sticky;
+      top: 0;
+      height: 60px;
+      color: var(--nav-link);
+      border-bottom: 2px solid var(--head-color);
+      z-index: 9999;
+    }
+  
+    nav ul {
+      background-color: white;
+      display: inline-flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      border-bottom: 2px solid var(--head-color);
+      z-index: 99;
+      opacity: 0;
+      transition: all 0.6s;
+      transition-delay: 0.1s;
+      transform: translateX(-30em);
+    }
+  
+    nav ul.terug {
+    transform: translateX(0);
+    transition:0.5s;
+    opacity: 1;
+   }
+  
+   nav li {
+      padding: 1em;
+      margin: 10px;
+      border-bottom: 2px solid var(--head-color);
+    }
+  
+  
+    #bars, .menu {
+      top: 10px;
+      color: var(--nav-active);
+      font-size: 15px;
+    }
+  
+    #bars { 
+      padding: 1em;
+      margin-left: 1em;
+    }
+  
+    nav .menu {
+      font-family: "poppins";
+    }
+  
+    nav a.active {
+      color: var(--nav-active);
+    }
+    
+    nav button {
+      background:none;
+      border: none;
+      margin-left: -3em;
+    }
+  
+    nav button:hover {
+      background:none;
+      border: none;
+      box-shadow: none;
+      cursor: pointer;
+    }
+  
+    nav button:focus {
+      background: none;
+      border:none;
+    }
+  
+ 
+    nav img {
+      display: none;;
+    }
+  
+  }
+  
+  
+  /**************/
+  /* HEADER
+  /**************/
+
+  
+  
+  h1 {
+    font-family: var(--header-font);
+    color: var(--head-color);
+}
+
+  
+  /**************/
+  /* Sections
+  /**************/
+
+  section {
+    position: relative;
+    background-image: url('../images/3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-color: var(--second-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 5em;
+    margin: 0 25%;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  
+    section:first-of-type {
+        background-color: var(--second-background);
+        text-align: center;
+    }
+  
+      
+    section:first-of-type img {
+      max-width: 70%;
+      margin: 5px;
+    }
+
+
+
+    iframe {
+      margin-top: 5px;
+      max-width: 90%;
+    }
+    
+  
+  /**************/
+  /*  footer 
+  /**************/
+  
+  
+  
+  footer {
+    display: flex;                 
+    flex-direction: row;        
+    align-items: center;
+    color: var(--accent-color);
+    height: 50px;
+    float: right;
+    z-index: 9999;
+  }
+  
+  footer a.active {
+    color: var(--nav-active);  
+  }
+  
+  footer a:hover {
+    color: var(--nav-hover);  
+    transition: 0.3s ease-in;
+  }
+  
+  footer ul {
+    background: none;
+  }
+  
+  footer li {
+    display: inline-block;
+    list-style-type: none;
+  } 
+  
+  
+  
+  
+  
+  /**************/
+  /* FORMS */
+  /**************/
+  
+  
+  
+  
+  
