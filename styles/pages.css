@@ -390,7 +390,6 @@ html, body {
 
   section {
     position: relative;
-    background-image: url('../images/3.png');
     background-size: 100%;
     background-position: center;
     background-color: var(--second-background);
