@@ -1,191 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Demi Broere Portfolio</title>
+    <meta name="description" content="Portfolio Demi Broere" />
+
+    <link rel="stylesheet" href="css/style.css" />
     
-	<meta name="author" content="Demi Broere">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-16x16.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand'>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Monodisplay=swap" rel="stylesheet">
 
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/pages.css'>
-
-</head>
-
-<body id="index">
-
-        <!-- Navigation -->
+  </head>
+  <body>
     
-        <nav>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+            <img
+              src="./assets/png/logo.png"
+              alt="logo"
+              class="header__logo-img"
+            />
+          <span class="header__logo-sub">Demi Broere</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a> </li>
 
-            <button>
-                <i class="fa fa-bars" aria-hidden="true" id="bars"> <span class="menu">Menu</span></i>
-            </button>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">Over mij </a></li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Projecten </a> </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a></li>
+          </ul>
 
-            <div class="logo">
-                    <img src="images/logo.png" alt="header logo"  />
+          <div class="header__main-ham-menu-cont">
+            <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+            <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none" />
+          </div>
+        </div>
+      </div>
+
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a></li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> Over mij </a></li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projecten </a></li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">KawaiiBox </h1>
+        <h2 class="heading-secondary">2021</h2>
+        <div class="project-cs-hero__info">
+            
+          <p class="text-primary">
+            Voor frontend development moesten wij een website nabouwen om kennis te maken met HTML en CSS. Ik had gekozen voor de website van Kawaiibox. Het is een website met vrolijke kleuren en leuke opties en uitdagingen om te coderen.
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="https://demibroere.github.io/blokweb/" class="btn btn--bg" target="_blank">Live Link</a>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/mockups/kawaiibox.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">KawaiiBox Overview</h3>
+              <p class="project-details__desc-para">
+                Voor het vak frontend development moesten wij een website kiezen om na te bouwen, van de gekozen website moest je dan 2 pagina's nabouwen. Ik heb gekozen voor de website van Kawaiibox, omdat dit een kleurrijke website is en ook erg vrolijk. Er kwamen dingen in voor waar ik nog nooit mee te maken had gehad en ik vond het dan ook erg leuk om er mee aan de slag te gaan. Bij de opdracht kon je kiezen of je voor surface plane ging of voor het responsive maken van de website. In eerste instantie had ik ervoor gekozen om mij te focussen op de surface plane, maar omdat ik ook graag wilde weten hoe je een website volledig responsive kon maken heb ik dat ook
+              </p>
+              <p class="project-details__desc-para">  
+                Bij de opleiding MBO 4 ICT heb ik al te maken gehad met HTML en CSS en dat vond ik toen al super leuk om te doen. Hier heb ik de basis al geleerd van coderen.
+              </p>             
+
+              <p class="project-details__desc-para">  
+                Ik heb geleerd hoe je een website responsive kan maken, ook heb ik geleerd hoe ik met grid en flexbox kan werken en dat dit dingen een stuk makkelijker kan maken. Tijdens dit project heb ik ook meer geleerd over het werken met keyframes, de hover en het belang van het accessible maken van de website. In de toekomst hoop ik nog veel meer te kunnen leren over HTML en CSS, zodat ik nog betere websites kan neerzetten. Voor dit project heb ik ook het minimale aan JavaScript kunnen gebruiken.
+              </p>             
+
+              <h2>De Caroussel </h2>
+              <p class="project-details__desc-para">  
+                Het maken van een caroussel heb ik ook geleerd tijdens dit project. Hieronder een voorbeeld van de caroussel die ook terugkomt in de website. Ik hoop mij hier nog verder in te kunnen verdiepen, want terwijl ik onderzoek deed naar hoe ik op de beste manier een caroussel in elkaar kon zetten kwam ik er achter dat er heel veel manieren zijn waarop dit gedaan kan worden.
+              </p>             
+
+
+
+
+
             </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title-sub">Gebruikt</h3>
+              <div class="skills">
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">JavaScript</div>
+              </div>
+            </div>
+            <div class="about__content-title">
+                <h3 class="project-details__content-title-sub">See Live</h3>
+                <a
+                  href="https://demibroere.github.io/blokweb/"
+                  class="btn btn--med btn--theme project-details__links-btn"
+                  target="_blank"
+                  >Live Code</a
+                >
+                <a
+                  href="https://github.com/demibroere/blokweb"
+                  class="btn btn--med btn--theme-inv project-details__links-btn"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+          </div>
+        </div>
+      </div>
+
+      
+      
+
+
+
+    </section>
     
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Mijn werk</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-
-
-        <!-- MAIN CONTENT -->
-
-    <main>
-
-         <!-- section 1 -->
-
-        <section>
-
-                <h1>
-                    Kawaiibox
-                </h1>
-                
-                <p>
-                    2021
-                </p>
-            
-            <img src="images/kawaiibox.png" class="pagemainimg" alt="kawaiibox mock ups">
-
-    
-            <p>
-                Voor het vak frontend development moesten wij een website kiezen om na te bouwen, van de gekozen website moest je dan 2 pagina's nabouwen. Ik heb gekozen voor de website van Kawaiibox, omdat dit een kleurrijke website is en ook erg vrolijk. Er kwamen dingen in voor waar ik nog nooit mee te  maken had gehad en ik vond het dan ook erg leuk om er mee aan de slag te gaan. Bij de opdracht kon je kiezen of je voor surface plane ging of voor het responsive maken van de website. In eerste instantie had ik ervoor gekozen om mij te focussen op de surface plane, maar omdat ik ook graag wilde weten hoe je een website volledig responsive kon maken heb ik dat ook 
-            </p>
-
-            <p>
-                Bij de opleiding MBO 4 ICT heb ik al te maken gehad met HTML en CSS en dat vond ik toen al super leuk om te doen. Hier heb ik de basis van geleerd van coderen.
-            </p>
-
-            <p>
-                Ik heb geleerd hoe je een website responsive kan maken, ook heb ik geleerd hoe ik met grid en flexbox moest werken en dat dit dingen een stuk makkelijker kan maken. Ook heb ik geleerd hoe keyframes werken, de hover en het belang van het accessible maken van de website. In de toekomst hoop ik nog veel meer te kunnen leren over HTML en CSS. 
-            </p>
-
-            <h2>Caroussel</h2>
-            
-            <p>Het maken van een caroussel heb ik ook geleerd tijdens dit project. Hieronder een voorbeeld van de caroussel die ook terugkomt in de website. Ik hoop mij hier nog verder in te kunnen verdiepen.</p>
-
-            <input type="radio" name="switch" id="i_1" checked>
-            <input type="radio" name="switch" id="i_2">
-            <input type="radio" name="switch" id="i_3">
-            <input type="radio" name="switch" id="i_4">
-           
-            <div class="wrapper">
-                            <div class="slide">
-                                <div class="inner content1">
-                                            <div class="portfolio">
-                                            <img src="images/sanrio.png" alt="sanrio img" />
-                                            <h3>Sanrio</h3>
-                                    </div>
-                                </div>   
-                            </div>
-
-                            <div class="slide">
-                                <div class="inner content2">
-                                    <div class="portfolio">
-                                        <img src="images/kitkat.png" alt="kitkat img" />
-                                        <h3>Kitkat</h3>
-                                    </div>
-                                </div>    
-                            </div>
-
-                            <div class="slide">
-                                <div class="inner content3">
-                                    <div class="portfolio">
-                                        <img src="images/gudetama.png" alt="gudetama img"/>
-                                        <h3>Gudetama</h3>
-                                    </div> 
-                                </div>
-                            </div>
-
-                            <div class="slide">
-                                <div class="inner content4">
-                                    <div class="portfolio">
-                                        <img src="images/hello-kitty.png" alt="hello kitty img"/>
-                                        <h3>Hello Kitty</h3>
-                                    </div>
-                                </div>
-                            </div>  
-                    </div>
-
-                            <div class="controls">
-                                <label class="ctrl_label" for="i_1">1</label>
-                                <label class="ctrl_label" for="i_2">2</label>
-                                <label class="ctrl_label" for="i_3">3</label>
-                                <label class="ctrl_label" for="i_4">4</label>
-                            </div>
-
-            <img src="images/kawaiibox.png" alt="kawaiibox mock ups">
-
-            <p>
-                Hier kan de website worden bekeken: 
-                <a href="https://demibroere.github.io/blokweb/">Kawaiibox website.</a>
-            </p>
-
-        </section>
-
-
-       
-
-    <!-- FOOTER -->
-
     <footer>
-   
-            <ul>
-                <li>
-                    © 2021 Demi Broere
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/demi-broere-10ab83170/" rel="nofollow" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://github.com/DemiBroere/" rel="nofollow" target="_blank"><i class="fa fa-github"></i> Github</a>
-                </li>
-                <li>
-                    <a href = "mailto:demibroere97@hotmail.com">demibroere97@hotmail.com</a> 
-                </li>
+      <div class="main-footer__row main-footer__row-1">
+          <a href="https://www.linkedin.com/in/demi-broere-10ab83170/" rel="nofollow" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a> 
+          <a href="https://github.com/DemiBroere/" rel="nofollow" target="_blank"><i class="fa fa-github"></i> Github</a> 
+          <a href = "mailto:demibroere97@hotmail.com">demibroere97@hotmail.com</a> 
+      </div>
+  </footer>
 
-                <li>
-                    <a href ="cv.html">Bekijk mijn CV</a> 
-                </li>
-            </ul>
-
-    </footer>
-
-    <script src='scripts/script.js'></script>
-
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>
-
-<!-- Bronnen 
-
-    Mock ups
-        https://www.anthonyboyd.graphics/mockups/samsung-galaxy-s8-plus-front-view-mockup/
-        https://creativebooster.net/collections/free-mockups/products/free-apple-imac-macbook-ipad-and-iphone-responsive-screen-mockups
-        
--->

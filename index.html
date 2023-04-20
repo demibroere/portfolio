@@ -1,322 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Demi Broere Portfolio</title>
+    <meta name="description" content="Portfolio Demi Broere" />
+
+    <link rel="stylesheet" href="css/style.css" />
     
-	<meta name="author" content="Demi Broere">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-16x16.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand'>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Monodisplay=swap" rel="stylesheet">
 
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
+  </head>
+  <body>
 
-</head>
-
-<body>
-
-        <!-- Navigation -->
-    
-        <nav>
-
-            <button>
-                <i class="fa fa-bars" aria-hidden="true" id="bars"> <span class="menu">Menu</span></i>
-            </button>
-
-            <div class="logo">
-                    <img src="images/logo.png" alt="header logo"  />
-            </div>
-    
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="">Mijn werk</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-
-    <!-- Header img -->
-
-    <header>
-        <div id="headercontent">
-            <h1>
-               Portfolio
-            </h1>
-            
-            <p>
-                I'm striving to be the best version of myself.
-            </p>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+            <img
+              src="./assets/png/logo.png"
+              alt="logo"
+              class="header__logo-img"
+            />
+          <span class="header__logo-sub"></span>
         </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a> </li>
 
-        <img src="images/blobheader.png" alt="header blob" />
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">Over mij </a></li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Projecten </a> </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a></li>
+          </ul>
 
+          <div class="header__main-ham-menu-cont">
+            <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+            <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none" />
+          </div>
+        </div>
+      </div>
+
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a></li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> Over mij </a></li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projecten </a></li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a></li>
+          </ul>
+        </div>
+      </div>
     </header>
 
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Demi Broere Portfolio</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            I'm striving to be the best version of myself!
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="index.html#projects" class="btn btn--bg">Projecten</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <img id="blob" src="assets\png\blobheader.png" alt="header blob" />
+          <span class="heading-sec__main">Over mij</span>
+          <span class="heading-sec__sub">
+            Mijn naam is Demi Broere en ik ben een 25 jarige studente. Ik volg de studie communicatie en multimedia design aan de Hogeschool van Amsterdam en ik zit in het derde jaar. Vóór mijn huidige opleiding heb ik de opleiding MBO 4 gevolgd en heb ik zowel een vmbo TL als een havo diploma op zak. Hiermee laat ik graag mijn <b>doorzettingsvermogen</b> blijken en mijn liefde voor het opdoen van, onder andere, nieuwe kennis.
+          </span>
+        </h2>
+
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Wie ben ik?</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Op school hou ik mij voornamelijk bezig met UX en UI design en dit doe ik met veel plezier. Echter, mijn liefde voor nieuwe kennis is zo groot dat ik vrijwel open sta voor van alles. Als er de juiste begeleiding bij zit ben ik iemand die snel leert! Ik hou ervan om nieuwe dingen te proberen, want als je het namelijk niet probeert weet je ook niet of je het leuk vind! Netjes en gestructureerd werk leveren is iets wat ik erg belangrijk vind en dit hoop ik ook te laten zien met mijn proces verslagen.  Ik vind het ook erg leuk om met Photoshop bezig te zijn en heb hier ook aardig wat kennis over op gedaan de laatste jaren.
+              </p>
+              <p class="about__content-details-para">
+                Naast mijn opleiding houd ik mij bezig met paardrijden, lezen en netflixen. Daarnaast kan je me altijd wakker maken voor een biertje. Oké... Misschien niet letterlijk.
+              </p>
+            </div>
+            <a href="index.html#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">Dutch</div>
+              <div class="skills__skill">English</div>
+              <div class="skills__skill">Microsoft Word</div>
+              <div class="skills__skill">PowerPoint</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript (basics)</div>
+              <div class="skills__skill">Photoshop</div>
+              <div class="skills__skill">Illustrator (basics)</div>
+              <div class="skills__skill">InDesign (basics)</div>
+              <div class="skills__skill">Adobe Premiere Pro (basics)</div>
+              <div class="skills__skill">Adobe XD</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Figma</div>
+              <div class="skills__skill">SEO</div>
+              <div class="skills__skill">LightSpeed</div>
+              <div class="skills__skill">Wordpress</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-        <!-- MAIN CONTENT -->
+    <section id="projects">
 
-    <main>
+       <div class="main-container">
 
-         <!-- section 1 -->
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projecten</span>
+          <span class="heading-sec__sub">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente
+          </span>
+        </h2>
 
-        <section>
-            
-            <div class="aboutimages">
-                <img src="images/doodles2.png" alt="Giraffe doodle" class="ph1" />
-                <img src="images/doodles.png" alt="logo doodles" class="ph2" />
+        <div id="gridcontent">
+          <div class="grid">
+                   <div class="grid-item">
+                    <img src="./assets/mockups/GalaxyRise.png" alt="Datavis">
+
+                    <h2 class="heading-secondary">Data Visualisatie</h2>
+                    <h3 class="heading-secondary-sub">Information Design</h3>
+
+                    <div class="overlay">
+
+                        <div class="content">
+                          <div class="projects__row-content">
+                          <h3 class="projects__row-content-title">Data visualisatie</h3>
+                          <h3 class="projects__subtitle">Information Design 22/23</h3>
+
+                            <p class="projects__row-content-desc">
+                              Een van de drie opdrachten van dit project was het helder weergeven van complexe data in een data visualisatie en een opdracht om data te visualiseren met behulp van Javascript. 
+                              Dit vak was opgedeeld in Data visualisatie en de tech-treck gevolgd door het project. 
+                            </p>
+
+                            <a href="Datavisualisatie.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank" >Case Study</a>
+
+                          </div>
+                        </div>
+                        </div>
+                 </div>
+
+                 <div class="grid-item">
+                  <img src="./assets/mockups/GreenG.png" alt="Green G">
+
+                  <h2 class="heading-secondary">GreenG</h2>
+                  <h3 class="heading-secondary-sub">Information Design</h3>
+
+                  <div class="overlay">
+
+                      <div class="content">
+                        <div class="projects__row-content">
+                          <h3 class="projects__row-content-title">Green G</h3>
+                          <h3 class="projects__subtitle">Information Design 22/23</h3>
+                          <p class="projects__row-content-desc">
+                            Een van de drie opdrachten van dit project was het visualiseren van eigen gekozen data. Dit is het project waar ik met drie anderen aan heb gewerkt. 
+
+                          </p>
+
+                          <a href="GreenG.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank" >Case Study</a>
+
+                        </div>
+                      </div>
+                      </div>
+               </div>
             </div>
 
 
-            <div class="about">
-                <div class="aboutcontent">
-                    
-                    <h1>Wie ben ik?</h1>
-                    
-                    <p>Mijn naam is Demi Broere en ik ben een 25 jarige studente. Ik volg de studie communicatie en multimedia design aan de Hogeschool van Amsterdam en ik zit in het derde jaar. Vóór mijn huidige opleiding heb ik de opleiding MBO 4 gevolgd en heb ik zowel een vmbo TL als een havo diploma op zak. Hiermee laat ik graag mijn doorzettingsvermogen blijken en mijn liefde voor het opdoen van, onder andere, nieuwe kennis.</p>
+      <div id="gridcontent">
+        <div class="grid">
+                 <div class="grid-item">
+                  <img src="./assets/mockups/equiride.png" alt="Equiride">
 
-                    <p>Op school hou ik mij voornamelijk bezig met UX en UI design en dit doe ik met veel plezier. Echter, mijn liefde voor nieuwe kennis is zo groot dat ik open sta voor zowel alles, als er maar de juiste begeleiding bij zit! Als je het namelijk niet probeert weet je ook niet of je het leuk vind! Netjes en gestructureerd werk leveren is iets wat ik erg belangrijk vind en dit hoop ik ook te laten zien met mijn proces verslagen.  </p>
+                  <h2 class="heading-secondary">Equiride</h2>
+                  <h3 class="heading-secondary-sub">UX | UI</h3>
 
-                    <p>Naast mijn opleiding houd ik mij bezig met paardrijden, lezen en natuurlijk netflixen. Daarnaast kan je me altijd wakker maken voor een biertje. Oké... Misschien niet letterlijk. Ik vind het ook erg leuk om met Photoshop bezig te zijn en heb hier ook aardig wat kennis over op gedaan de laatste jaren.  </p>
-                </div>
+
+                  <div class="overlay">
+
+                      <div class="content">
+                        <div class="projects__row-content">
+                          <h3 class="projects__row-content-title">Equiride</h3>
+                          <h3 class="projects__subtitle">UX | UI 21/22</h3>
+
+                          <p class="projects__row-content-desc">
+                            Voor dit project moest ik een responsive multi device design ontwerpen voor een zelf bedachte app.
+                          </p>
+
+                          <a href="Equiride.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank" >Case Study</a>
+
+                        </div>
+                      </div>
+                      </div>
+               </div>
+
+               <div class="grid-item">
+                <img src="./assets/mockups/kawaiibox.png" alt="KawaiiBox">
+
+                <h2 class="heading-secondary">KawaiiBox</h2>
+                <h3 class="heading-secondary-sub">Frontend Development</h3>
+
+                <div class="overlay">
+
+                    <div class="content">
+                      <div class="projects__row-content">
+                        <h3 class="projects__row-content-title">KawaiiBox</h3>
+                        <h3 class="projects__subtitle">Frontend Development 21/22</h3>
+
+                        <p class="projects__row-content-desc">
+                          Voor frontend development moest ik een website nabouwen om kennis te maken met HTML en CSS. Ik had gekozen voor de website van Kawaiibox. 
+                        </p>
+
+                        <a href="Kawaiibox.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank" >Case Study</a>
+
+                      </div>
+                    </div>
+                    </div>
+             </div>
+          </div>
+
+          <div id="gridcontent">
+            <div class="grid">
+                     <div class="grid-item">
+                      <img src="./assets/mockups/plogdedag.png" alt="Plog de Dag">
+    
+                      <h2 class="heading-secondary">Plog de Dag</h2>
+                      <h3 class="heading-secondary-sub">Vormgeving </h3>
+
+                      <div class="overlay">
+    
+                          <div class="content">
+                            <div class="projects__row-content">
+                              <h3 class="projects__row-content-title">Plog de Dag</h3>
+                              <h3 class="projects__subtitle">Vormgeving 20/21</h3>
+    
+                              <p class="projects__row-content-desc">
+                                Voor Plog de Dag moesten wij een one page maken voor zowel mobiel als desktop. Bij de opdracht hoorde een breakpoint schets. </p>
+    
+                              <a href="Plogdedag.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank" >Case Study</a>
+    
+                            </div>
+                          </div>
+                          </div>
+                   </div>
+    
+                   <div class="grid-item">
+                    <img src="./assets/mockups/songtekst.png" alt="songtekst">
+    
+                    <h2 class="heading-secondary">Lucifer Songtekst</h2>                      
+                    <h3 class="heading-secondary-sub">Vormgeving </h3>
+
+                    <div class="overlay">
+    
+                        <div class="content">
+                          <div class="projects__row-content">
+                            <h3 class="projects__row-content-title">Lucifer Songtekst</h3>
+                            <h3 class="projects__subtitle">Vormgeving 20/21</h3>
+    
+                            <p class="projects__row-content-desc">
+                              Voor het vak vormgeven moesten wij een songtekst vormgeven. Het was de eerste keer dat ik met Adobe After Effects werkte en ik vond dit toch wel erg leuk om te doen.                            </p>
+    
+                            <a href="lucifer.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank" >Case Study</a>
+    
+                          </div>
+                        </div>
+                        </div>
+                 </div>
             </div>
-            
-        </section>
+      </div>
 
-         <!-- section 2 -->
+      
+      </section>
 
-        <section>
-              <img src="images/star.png" alt="Skills" />
-            
-            <div id="skills">
-                
-                 
-                <div class="feature-icon bounce"><i class="fa fa-star" aria-hidden="true"></i></div>
-                    <h3>Adobe</h3>
-                    <p>Ik werk met verschillende adobe programma's waaronder Photoshop.</p>
-
-
-                <div class="feature-icon bounce"><i class="fa fa-star" aria-hidden="true"></i></div>
-
-                    <h3>Design</h3>
-                    <p>Voor school hou ik mij vooral bezig met UX en UI design.</p>
-
-                 <div class="feature-icon bounce"><i class="fa fa-star" aria-hidden="true"></i></div>
-                    <h3>Frontend Development</h3>
-                    <p>Een van mijn passies is frontend development. Hier hou ik mij dan ook graag mee bezig.</p>
-
-
-            </div>       
-
-        </section>
-
-         <!-- section 4 -->
-
-        <section>
-            <h1>Mijn werk</h1>
-             <p>Hieronder zijn enkel of mijn projecten te zien.</p>
-
-             <div id="gridcontent">
-
-                <div class="grid">
-
-                        <div class="grid-item">
-                            <img src="images/equiride.png" alt="Plog de dag mock ups">
-                            <h2>Equiride.</h2>
-
-                            <div class="overlay">
-                                <div class="content">
-                                    <h2>Equiride </h2>
-                                    <p>
-                                        Voor dit project moest je een responsive multi device design designen voor een zelf bedachte app.
-                                    </p>
-                                    <button class="hoverbutton">
-                                        <a href="equiride.html">see more</a>
-                                    </button>                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid-item">
-                            <img src="images/plogdedag.png" alt="Plog de dag ups">
-                            <h2>Plog de Dag.</h2>
-
-                            <div class="overlay">
-                                <div class="content">
-                                    <h2>Plog de Dag</h2>
-                                    <p>
-                                        Voor Plog de Dag moesten wij een one page maken voor zowel mobiel als desktop. Bij de opdracht hoorde een breakpoint schets.
-                                    </p>
-                                    <button class="hoverbutton">
-                                        <a href="plogdedag.html">see more</a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                        <div class="grid-item">
-                            <img src="images/Artis.png" alt="Young artis mock ups">
-                            <h2>Young Artis Experience.</h2>
-
-                            <div class="overlay">
-                                <div class="content">
-                                    <h2>Young Artis Experience</h2>
-                                    <p>
-                                        Dit project hoorde bij een opdracht waarbij ik ee totaalervaring voor kinderen moest ontwerpen. Bij de case hoorde verschillende doelen. De 'main' doel van deze totaalervaring was om kinderen te helpen navigeren door het park en de drukte in Artis verspreiden.
-                                    </p>
-                                    <button class="hoverbutton">
-                                        <a href="YAE.html">see more</a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid-item">
-                            <img src="images/jsplayground.png" alt="Javascript mock ups">
-                            <h2>Javascript.</h2>
-
-                            <div class="overlay">
-                                <div class="content">
-                                    <h2>Javascript </h2>
-                                    <p>
-                                        Dit project was gebaseerd op Javascript en het beter leren kennen van deze taal. Dit was de eerste keer dat ik met Javascript werkte. 
-                                    </p>
-
-                                    <button class="hoverbutton">
-                                        <a href="jsgame.html">see more</a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid-item">
-                            <img src="images/songtekst.png" alt="Songtekst mock ups">
-                            <h2>Songtekst.</h2>
-
-                            <div class="overlay">
-                                <div class="content">
-                                    <h2>Songtekst </h2>
-                                    <p>
-                                        Voor het vak vormgeven moesten wij een songtekst vormgeven. Het was de eerste keer dat ik met Adobe After Effects werkte en ik vond dit toch wel erg leuk om te doen.
-                                    </p>
-                                    <button class="hoverbutton">
-                                        <a href="songtekst.html">see more</a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid-item">
-                            <img src="images/kawaiibox.png" alt="Vormgeving mock ups">
-                            <h2>Kawaiibox.</h2>
-
-                            <div class="overlay">
-                                <div class="content">
-                                    <h2>Kawaiibox </h2>
-                                    <p>
-                                        Voor frontend development moesten wij een website nabouwen om kennis te maken met HTML en CSS. Ik had gekozen voor Kawaiibox, omdat het een website was met vrolijke kleuren en leuke opties om kennis te maken met programmeren.
-                                    </p>
-
-                                    <button class="hoverbutton">
-                                        <a href="kawaiibox.html">see more</a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid-item">
-                            <img src="images/logos.png" alt="Logo mock up">
-                            <h2>Logos.</h2>
-
-                            <div class="overlay">
-                                <div class="content">
-                                    <h2>Enkele logo's </h2>
-                                    <p>Dit zijn enkele logo's die ik had gemaakt tijdens het spelen met Photoshop.</p>
-
-                                    <button class="hoverbutton">
-                                        <a href="logos.html">see more</a>
-                                    </button>                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid-item">
-                            <img src="images/vormgeving.png" alt="Vormgeving mock ups">
-                            <h2>Vormgeving.</h2>
-
-                            <div class="overlay">
-                                <div class="content">
-                                    <h2>Vormgeving </h2>
-                                    <p>Dit was een van de eerste vakken waar ik mee te maken kreeg op deze opleiding en laat goed de groei zien die ik in het eerste blok een het doormaken was. </p>
-                                    <button class="hoverbutton">
-                                        <a href="vormgeving.html">see more</a>
-                                    </button>                                </div>
-                            </div>
-                        </div>
-                        
-
-
-
-
-
-                </div>
+    
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Contact opnemen kan door het onderstaande formulier in te vullen.
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Naam</label>
+              <input
+                required
+                placeholder="Hier uw naam"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
             </div>
 
-        </section>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="company">Bedrijf</label>
+              <input
+                placeholder="Hier uw bedrijf..."
+                type="text"
+                class="contact__form-input"
+                name="company"
+                id="company"
+              />
+            </div>
 
-       
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter uw email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
 
-    <!-- FOOTER -->
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="subject">Onderwerp</label>
+              <input
+                required
+                placeholder="Hier het onderwerp..."
+                type="text"
+                class="contact__form-input"
+                name="subject"
+                id="subject"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Bericht</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter uw bericht..."
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Verzenden
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <footer>
-            <ul>
-                <li>
-                    © 2021 Demi Broere
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/demi-broere-10ab83170/" rel="nofollow" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://github.com/DemiBroere/" rel="nofollow" target="_blank"><i class="fa fa-github"></i> Github</a>
-                </li>
-                <li>
-                    <a href = "mailto:demibroere97@hotmail.com">demibroere97@hotmail.com</a> 
-                </li>
-
-                <li>
-                    <a href ="cv.html">Bekijk mijn CV</a> 
-                </li>
-            </ul>
-
+          <div class="main-footer__row main-footer__row-1">
+              <a href="https://www.linkedin.com/in/demi-broere-10ab83170/" rel="nofollow" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a> 
+              <a href="https://github.com/DemiBroere/" rel="nofollow" target="_blank"><i class="fa fa-github"></i> Github</a> 
+              <a href = "mailto:demibroere97@hotmail.com">demibroere97@hotmail.com</a> 
+          </div>
     </footer>
 
-    <script src='scripts/script.js'></script>
-
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>
-
-<!-- Bronnen 
-
-    Mock ups
-        https://www.anthonyboyd.graphics/mockups/samsung-galaxy-s8-plus-front-view-mockup/
-        https://creativebooster.net/collections/free-mockups/products/free-apple-imac-macbook-ipad-and-iphone-responsive-screen-mockups
-        
--->
