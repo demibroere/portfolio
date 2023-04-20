@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Demi Broere Portfolio</title>
+    <meta name="description" content="Portfolio Demi Broere" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <header class="header">
+        <div class="header__content">
+          <div class="header__logo-container">
+              <img
+                src="./assets/png/logo.png"
+                alt="logo"
+                class="header__logo-img"
+              />
+            <span class="header__logo-sub">Demi Broere</span>
+          </div>
+          <div class="header__main">
+            <ul class="header__links">
+              <li class="header__link-wrapper">
+                <a href="./index.html" class="header__link"> Home </a> </li>
+  
+              <li class="header__link-wrapper">
+                <a href="./index.html#about" class="header__link">Over mij </a></li>
+              <li class="header__link-wrapper">
+                <a href="./index.html#projects" class="header__link">Projecten </a> </li>
+              <li class="header__link-wrapper">
+                <a href="./contact" class="header__link"> Contact </a></li>
+            </ul>
+  
+            <div class="header__main-ham-menu-cont">
+              <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+              <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none" />
+            </div>
+          </div>
+        </div>
+  
+        <div class="header__sm-menu">
+          <div class="header__sm-menu-content">
+            <ul class="header__sm-menu-links">
+              <li class="header__sm-menu-link">
+                <a href="./index.html"> Home </a></li>
+  
+              <li class="header__sm-menu-link">
+                <a href="./index.html#about"> Over mij </a></li>
+  
+              <li class="header__sm-menu-link">
+                <a href="./index.html#projects"> Projecten </a></li>
+  
+              <li class="header__sm-menu-link">
+                <a href="./Contact.html"> Contact </a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Naam</label>
+              <input
+                required
+                placeholder="Hier uw naam"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="company">Bedrijf</label>
+              <input
+                placeholder="Hier uw bedrijf..."
+                type="text"
+                class="contact__form-input"
+                name="company"
+                id="company"
+              />
+            </div>
+
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter uw email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="subject">Onderwerp</label>
+              <input
+                required
+                placeholder="Hier het onderwerp..."
+                type="text"
+                class="contact__form-input"
+                name="subject"
+                id="subject"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Bericht</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter uw bericht..."
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Verzenden
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    
+    <footer>
+          <div class="main-footer__row main-footer__row-1">
+              <a href="https://www.linkedin.com/in/demi-broere-10ab83170/" rel="nofollow" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a> 
+              <a href="https://github.com/DemiBroere/" rel="nofollow" target="_blank"><i class="fa fa-github"></i> Github</a> 
+              <a href = "mailto:demibroere97@hotmail.com">demibroere97@hotmail.com</a> 
+          </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
