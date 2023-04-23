@@ -735,6 +735,8 @@ textarea {
   max-width: 70rem;
   margin: auto; }
 
+  
+
 .project-details__desc {
   margin: 0 0 7rem 0; }
   .project-details__desc-para {
@@ -742,6 +744,16 @@ textarea {
     line-height: 1.7;
 	color: var(--text-txt-sec);
     margin-bottom: 2rem; }
+
+    ul, li {
+      font-size: 1.8rem;
+    color: var(--text-txt-sec);
+      margin-bottom: 2rem; 
+    }
+
+    ul {
+      list-style-type: disc;
+    }
 
 .project-details__tools-used {
   margin: 0 0 7rem 0; }
