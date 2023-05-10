@@ -20,3 +20,4 @@ function toonMenu() {
 }
 
 menuButton.addEventListener("click", toonMenu);
+

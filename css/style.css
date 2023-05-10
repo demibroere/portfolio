@@ -963,3 +963,32 @@ textarea {
           .main-footer__row-1 {
             margin-bottom: 5rem; } }
 
+            .gallery {
+              --s: 150px; /* controls the size */
+              --g: 10px;  /* controls the gap */
+            
+              display: grid;
+              gap: var(--g);
+              width: calc(3*var(--s) + 2*var(--g)); /* 3 times the size plus 2 times the gap */
+              aspect-ratio: 1;
+              grid-template-columns: repeat(3, auto);
+            }
+
+            .gallery > img {
+              width: 0;
+              height: 0;
+              min-height: 100%;
+              min-width: 100%;
+              object-fit: cover;
+            }
+
+            
+
+
+
+
+
+
+
+
+            
