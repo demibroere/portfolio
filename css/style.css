@@ -740,8 +740,9 @@ textarea {
   .project-details__desc-para {
     font-size: 1.8rem;
     line-height: 1.7;
+    
 	color: var(--text-txt-sec);
-    margin-bottom: 2rem; }
+    margin-bottom: 4rem; }
 
     ul, li {
       font-size: 1.8rem;
@@ -963,8 +964,11 @@ textarea {
           .main-footer__row-1 {
             margin-bottom: 5rem; } }
 
+            iframe { 
+              margin-bottom: 3em;
+              margin-top: 1em;
+            }
 
-            
 
 
 
